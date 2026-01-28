@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calmify | Mental Wellness</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+</head>
+<body>
+
+  <div class="glow"></div>
+
+  <header class="header">
+    <div class="container nav">
+      <h1 class="logo">Calmify</h1>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="hero container">
+      <div class="hero-text">
+        <h2>Relax Your Mind.<br>Improve Your Life.</h2>
+        <p>
+          Calmify helps you reduce stress, sleep better and stay focused
+          through guided meditation and breathing exercises.
+        </p>
+        <button>Start Free Trial</button>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80" alt="Meditation">
+      </div>
+    </div>
+  </header>
+
+  <section id="features" class="features container">
+    <h2>Features</h2>
+    <div class="cards">
+      <div class="card">🧘 Guided Meditation</div>
+      <div class="card">🌙 Better Sleep</div>
+      <div class="card">🌿 Stress Relief</div>
+    </div>
+  </section>
+
+  <section id="about" class="about container">
+    <h2>About Calmify</h2>
+    <p>
+      Calmify is designed to bring peace into your daily life.
+      Our mission is to help people feel calmer, happier and more balanced
+      using simple digital tools.
+    </p>
+  </section>
+
+  <section id="contact" class="contact container">
+    <h2>Contact</h2>
+    <p>Email: hello@calmify.app</p>
+  </section>
+
+  <footer class="footer">
+    © 2026 Calmify. All rights reserved.
+  </footer>
+  <section id="features" class="features container reveal">
+...
+</section>
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+
+  window.addEventListener('scroll', () => {
+    reveals.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      if (top < windowHeight - 100) {
+        el.classList.add('active');
+      }
+    });
+});
+
+</script>
+</body>
+<section id="features" class="features container reveal">
+...
+</section>
+
+<section id="about" class="about container reveal">
+...
+</section>
+
+<section id="contact" class="contact container reveal">
+...
+</section>
+
+</html>
